@@ -1,0 +1,9 @@
+{
+  "name": "cookie-banner",
+  "version": "1.0.0",
+  "description": "GDPR Cookie Banner",
+  "main": "index.js",
+  "repository": "git@github.com:billmn/cookie-banner.git",
+  "author": "Davide Bellini <bellini.davide@gmail.com>",
+  "license": "MIT"
+}
