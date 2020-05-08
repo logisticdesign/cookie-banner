@@ -12,4 +12,4 @@ jobs:
     - name: Richiesta HTTP
       uses: wei/curl@v1.1.1
       with:
-        args: https://purge.jsdelivr.net/gh/billmn/cookie-banner
+        args: https://purge.jsdelivr.net/gh/logisticdesign/cookie-banner@1/dist/cookie-banner.min.js https://purge.jsdelivr.net/gh/logisticdesign/cookie-banner@1/dist/cookie-banner.min.csss
