@@ -98,7 +98,7 @@ export default class CookieBanner
     getContent(locale = this._options.locale, policyPath = this._options.policyPath) {
         let contents = {
             it: {
-                link: "-- Scopri di più --",
+                link: "Scopri di più",
                 href: policyPath,
                 deny: "Rifiuta",
                 allow: "Accetta",

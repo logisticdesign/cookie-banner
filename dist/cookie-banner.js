@@ -433,7 +433,7 @@ var CookieBanner = /*#__PURE__*/function () {
       var policyPath = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this._options.policyPath;
       var contents = {
         it: {
-          link: "-- Scopri di più --",
+          link: "Scopri di più",
           href: policyPath,
           deny: "Rifiuta",
           allow: "Accetta",
