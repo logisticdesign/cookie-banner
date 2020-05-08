@@ -19,7 +19,7 @@ Questa libreria consente l'integrazione semplificata e centralizzata del Cookie 
 
 Ad ogni release viene eseguita una richiesta di Purge della cache al servizio CDN. Tuttavia JSDelivr serve i file con un `max-age=604800` (7 giorni) pertanto potrebbe essere necessario forzare la cache del browser nel caso in cui non venisse caricato il file aggiornato.
 
-Per *forzare la cache da parte del browser* è possibile specificare un parametro dinamico nella URL dei file. (Nell'esempio viene utilizzata la variabile "now" di Statamic)
+Per **forzare la cache da parte del browser** è possibile specificare un parametro dinamico nella URL dei file. (Nell'esempio viene utilizzata la variabile "now" di Statamic)
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/logisticdesign/cookie-banner@1/dist/cookie-banner.min.css?t={{ now format='YmdHis' }}">
