@@ -111,6 +111,13 @@ export default class CookieBanner
                 allow: "Accept",
                 message: "This website or its third-party tools process personal data (e.g. browsing data or IP addresses) and use cookies or other identifiers, which are necessary for its functioning and required to achieve the purposes illustrated in the cookie policy."
             },
+            de: {
+                link: "Mehr erfahren",
+                href: policyPath,
+                deny: 'Ablehnen',
+                allow: "Zustimmen",
+                message: "Diese Website bzw. über die Website eingesetzte Drittanbieterdienste verarbeiten personenbezogene Daten (z.B. Browsing-Daten oder IP-Adressen) und verwenden Cookies bzw. andere Identifikatoren, die für das Funktionieren der Website sowie zu den in den Cookie-Richtlinien beschriebenen Zwecken notwendig sind."
+            },
             fr: {
                 link: "Obtenire plus d'information",
                 href: policyPath,
