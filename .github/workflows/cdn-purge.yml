@@ -1,0 +1,17 @@
+name: Purge CDN
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Richiesta HTTP
+      uses: wei/curl@v1.1.1
+      with:
+        args: https://purge.jsdelivr.net/gh/billmn/cookie-banner
