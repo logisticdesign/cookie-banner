@@ -1,0 +1,54 @@
+@import "~cookieconsent/build/cookieconsent.min.css";
+
+$popupTextColor: #ffffff;
+$popupLinkColor: #f9f9f9;
+$popupBackground: #000000;
+
+$buttonTextColor: #ffffff;
+$buttonBackground: #4299e1;
+
+.cc-window {
+    color: $popupTextColor;
+    background: $popupBackground;
+
+    &.cc-floating {
+        padding: 2em;
+        max-width: 30em;
+    }
+
+    a, .cc-link {
+        color: $popupLinkColor;
+    }
+}
+
+.cc-floating .cc-message {
+    margin-bottom: 2.5em;
+}
+
+.cc-theme-classic .cc-btn {
+    color: $buttonTextColor;
+    background: $buttonBackground !important;
+    border-color: $buttonBackground !important;
+
+    font-size: 1em;
+    min-width: 120px;
+    transition: 0.2s;
+    border-width: 2px;
+    border-radius: 9999px;
+    text-decoration: none !important;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+.cc-revoke {
+    opacity: 0.7;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

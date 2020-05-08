@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="build/cookie-banner.css">
+        <script src="build/cookie-banner.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                CookieBanner.run()
+            })
+        </script>
+    </head>
+
+    <body>
+        <iframe
+            class="cookie-prevent"
+            width="800"
+            height="315"
+            scrolling="no"
+            frameborder="0"
+            allowFullScreen="true"
+            allowTransparency="true"
+            data-suppressedsrc="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/facebook/videos/10153231379946729&show_text=0&width=1280"
+        ></iframe>
+
+        <script class="cookie-prevent-inline" type="text/plain">
+            console.log('Running script ...')
+        </script>
+    </body>
+</html>
