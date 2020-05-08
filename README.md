@@ -15,6 +15,23 @@ Questa libreria consente l'integrazione semplificata e centralizzata del Cookie 
 </script>
 ```
 
+## CDN
+
+Ad ogni release viene eseguita una richiesta di Purge della cache al servizio CDN. Tuttavia JSDelivr serve i file con un `max-age=604800` (7 giorni) pertanto potrebbe essere necessario forzare la cache del browser nel caso in cui non venisse caricato il file aggiornato.
+
+Per *forzare la cache da parte del browser* è possibile specificare un parametro dinamico nella URL dei file. (Nell'esempio viene utilizzata la variabile "now" di Statamic)
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/logisticdesign/cookie-banner@1/dist/cookie-banner.min.css?t={{ now format='YmdHis' }}">
+<script src="https://cdn.jsdelivr.net/gh/logisticdesign/cookie-banner@1/dist/cookie-banner.min.js?t={{ now format='YmdHis' }}"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        CookieBanner.run();
+    })
+</script>
+```
+
 ## Personalizzazione
 
 È possibile personalizzare la configurazione attraverso il metodo `setup`:
@@ -48,7 +65,3 @@ Percorso della Cookie Policy
 
 `cookieConsent`<br/><br/>
 Parametri per personalizzare il comportamento di CookieConsent. Per il dettaglio dei parametri fare riferimento alla [guida ufficiale](https://www.osano.com/cookieconsent/documentation/javascript-api/)
-
-### CDN
-
-Ad ogni release viene eseguita una richiesta di Purge della cache al servizio CDN. Tuttavia JSDelivr serve i file con un `max-age=604800` (7 giorni) pertanto potrebbe essere necessario forzare la cache del browser nel caso in cui non venisse caricato il file aggiornato.
