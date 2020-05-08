@@ -36,15 +36,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ### Parametri
 
-`locale`<br/>
+`locale`<br/><br/>
 Codice lingua da utilizzare per i testi del banner. Di **default** viene identicato l'attributo `lang` presente nel tag <html>, es. `<html lang="it">`
 
 ***
 
-`policyPath`<br/>
+`policyPath`<br/><br/>
 Percorso della Cookie Policy
 
 ***
 
-`cookieConsent`<br/>
+`cookieConsent`<br/><br/>
 Parametri per personalizzare il comportamento di CookieConsent. Per il dettaglio dei parametri fare riferimento alla [guida ufficiale](https://www.osano.com/cookieconsent/documentation/javascript-api/)
+
+### CDN
+
+Ad ogni release viene eseguita una richiesta di Purge della cache al servizio CDN. Tuttavia JSDelivr serve i file con un `max-age=604800` (7 giorni) pertanto potrebbe essere necessario forzare la cache del browser nel caso in cui non venisse caricato il file aggiornato.
