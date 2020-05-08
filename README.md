@@ -1,3 +1,5 @@
+⚠️ La libreria è a solo uso interno, non utilizzarla nei tuoi progetti ⚠️
+
 # CookieBanner v.1
 
 Questa libreria consente l'integrazione semplificata e centralizzata del Cookie Banner all'interno della pagina web.
