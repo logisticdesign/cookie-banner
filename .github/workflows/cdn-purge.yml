@@ -9,7 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Richiesta HTTP
+    - name: Purge JS file
       uses: wei/curl@v1.1.1
       with:
-        args: https://purge.jsdelivr.net/gh/logisticdesign/cookie-banner@1/dist/cookie-banner.min.js https://purge.jsdelivr.net/gh/logisticdesign/cookie-banner@1/dist/cookie-banner.min.csss
+        args: https://purge.jsdelivr.net/gh/logisticdesign/cookie-banner@1/dist/cookie-banner.min.js
+    - name: Purge CSS file
+      uses: wei/curl@v1.1.1
+      with:
+        args: https://purge.jsdelivr.net/gh/logisticdesign/cookie-banner@1/dist/cookie-banner.min.css
