@@ -39,6 +39,7 @@
 }
 
 .cc-revoke {
+  display: none !important;
   opacity: 0.7;
   font-size: 14px;
   padding-left: 20px;
