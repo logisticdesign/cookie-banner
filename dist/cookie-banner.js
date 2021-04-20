@@ -498,8 +498,8 @@ window.CookieBanner = new CookieBanner();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/davide/Code/git/davide/cookie-banner/src/cookie-banner.js */"./src/cookie-banner.js");
-module.exports = __webpack_require__(/*! /Users/davide/Code/git/davide/cookie-banner/src/cookie-banner.scss */"./src/cookie-banner.scss");
+__webpack_require__(/*! /Users/dbellini/Code/git/mbemantova/cookie-banner/src/cookie-banner.js */"./src/cookie-banner.js");
+module.exports = __webpack_require__(/*! /Users/dbellini/Code/git/mbemantova/cookie-banner/src/cookie-banner.scss */"./src/cookie-banner.scss");
 
 
 /***/ })
