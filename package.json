@@ -13,10 +13,10 @@
   },
   "devDependencies": {
     "cookieconsent": "^3.1.1",
-    "laravel-mix": "^6.0.39",
+    "laravel-mix": "^6.0.42",
     "merge": "^2.1.1",
-    "resolve-url-loader": "^4.0.0",
-    "sass": "^1.48.0",
-    "sass-loader": "^12.4.0"
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.49.7",
+    "sass-loader": "^12.1.0"
   }
 }
