@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Cookie Banner</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
 
         <link rel="stylesheet" href="dist/cookie-banner.css">
         <script src="dist/cookie-banner.js"></script>
@@ -16,16 +18,17 @@
     </head>
 
     <body>
-        <iframe
-            class="cookie-prevent"
-            width="800"
-            height="315"
-            scrolling="no"
-            frameborder="0"
-            allowFullScreen="true"
-            allowTransparency="true"
-            data-suppressedsrc="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/facebook/videos/10153231379946729&show_text=0&width=1280"
-        ></iframe>
+        <div class="relative p-6 max-w-3xl mx-auto">
+            <iframe
+                class="w-full cookie-prevent"
+                width="560"
+                height="315"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                data-suppressedsrc="https://www.youtube.com/embed/TmWIrBPE6Bc"
+            ></iframe>
+        </div>
 
         <script class="cookie-prevent-inline" type="text/plain">
             console.log('Running script ...')
