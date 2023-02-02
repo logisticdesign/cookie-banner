@@ -67,8 +67,6 @@ export default class CookieBanner
                 }
             },
             onRevokeChoice: function() {
-                console.log('ciao');
-
                 self.blockPreventedScripts()
             },
         }

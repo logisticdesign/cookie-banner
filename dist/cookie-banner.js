@@ -72,7 +72,6 @@ var CookieBanner = /*#__PURE__*/function () {
           }
         },
         onRevokeChoice: function onRevokeChoice() {
-          console.log('ciao');
           self.blockPreventedScripts();
         }
       };
