@@ -80,7 +80,7 @@ export default class CookieBanner
         })
 
         document.querySelectorAll('.cookie-prevent-inline').forEach(el => {
-            if (el.getAttribute('type') == 'text/plain') {
+            if (el.getAttribute('type') === 'text/plain') {
                 var newScriptEl = el
 
                 newScriptEl.setAttribute('type', 'text/javascript')
@@ -98,7 +98,7 @@ export default class CookieBanner
         })
 
         document.querySelectorAll('.cookie-prevent-inline').forEach(el => {
-            if (el.getAttribute('type') == 'text/javascript') {
+            if (el.getAttribute('type') === 'text/javascript') {
                 var newScriptEl = el
 
                 newScriptEl.setAttribute('type', 'text/plain')

@@ -189,7 +189,7 @@ var CookieBanner = /*#__PURE__*/function () {
         }
       });
       document.querySelectorAll('.cookie-prevent-inline').forEach(function (el) {
-        if (el.getAttribute('type') == 'text/plain') {
+        if (el.getAttribute('type') === 'text/plain') {
           var newScriptEl = el;
           newScriptEl.setAttribute('type', 'text/javascript');
           el.parentNode.insertBefore(newScriptEl, el.nextSibling);
@@ -206,7 +206,7 @@ var CookieBanner = /*#__PURE__*/function () {
         }
       });
       document.querySelectorAll('.cookie-prevent-inline').forEach(function (el) {
-        if (el.getAttribute('type') == 'text/javascript') {
+        if (el.getAttribute('type') === 'text/javascript') {
           var newScriptEl = el;
           newScriptEl.setAttribute('type', 'text/plain');
           el.parentNode.insertBefore(newScriptEl, el.nextSibling);
