@@ -1,7 +1,6 @@
 import merge from 'merge';
 import { CookieConsent } from 'cookieconsent';
 
-//
 export default class CookieBanner
 {
     constructor() {
